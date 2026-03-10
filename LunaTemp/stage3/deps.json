@@ -1,0 +1,17 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "D:/Unity/Project/Playable Ad/LunaTemp/stage3/processed-scripts/Assets/3D model/LittleFriends-CartoonAnimals-Lite/Demo/Script/Demo.cs"
+    ],
+    [
+      "C:/Users/Perso/Downloads/7.1.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "C:/Users/Perso/Downloads/7.1.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "C:/Users/Perso/Downloads/7.1.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
