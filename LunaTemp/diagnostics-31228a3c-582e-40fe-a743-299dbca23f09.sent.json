@@ -1,0 +1,144 @@
+{
+    "BuildID": "31228a3c-582e-40fe-a743-299dbca23f09",
+    "Command": "project:deploy",
+    "ProjectID": "6f0517ec927523b4899bd1d5f4562f01",
+    "ProjectStateHash": "9e3ac0fcccba157a9ae67e52f8d23ee2eef3fcc2b676e55b439ff0528011a94b",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1773660205435,
+    "EndTime": 1773660233192,
+    "PlaygroundUserID": 33384,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "6000.0.69f1",
+    "LunaVersion": "7.1.0",
+    "LogCount": 5,
+    "Logs": [
+        {
+            "LogID": "6f37c809-aa9e-4f3c-8a79-903f970c1555",
+            "Order": 4,
+            "Timestamp": 1773660233442,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3015",
+            "Description": "You are not the Game Ended API: LifeCycle.GameEnded",
+            "Details": [
+                "You are not using the Game Ended API: LifeCycle.GameEnded. Some ad networks require this call, please add the event to avoid the ad being rejected."
+            ],
+            "DescriptionValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "DetailsValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "17fd0979-ce1a-454f-b047-f516110749ec",
+            "Order": 4,
+            "Timestamp": 1773660233442,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "cb02fbcb-7616-4ea0-8b1f-0c1a44db3f6b",
+            "Order": 0,
+            "Timestamp": 1773660209538,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1007",
+            "Description": "Extensive use of mesh colliders",
+            "Details": [
+                "Usage of mesh colliders has negative effect on performance. You can use primitive colliders instead."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "50f66380-a007-4b5b-8acc-f59d887c9a87",
+            "Order": 1,
+            "Timestamp": 1773660209543,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.10)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "D:/Unity/Project/Playable Ad/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "7e3ca1d0-72f9-4a04-b2f4-02d5db86a225",
+            "Order": 2,
+            "Timestamp": 1773660209544,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "Cube",
+                "Plane",
+                "Pos 1",
+                "Flash",
+                "Pos 2",
+                "Flash",
+                "Pos 3",
+                "Flash",
+                "Pos 4",
+                "Flash",
+                "Pos 5",
+                "Flash"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 12,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
