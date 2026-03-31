@@ -23,7 +23,7 @@ public class WavyLineRenderer : MonoBehaviour
     private Color _baseColor = Color.yellow;
     
     [Header("Target Management")]
-    private float targetDuration = 0.07f; 
+    private float targetDuration = 0.03f; 
     private List<GameObject> _targetBlocks = new List<GameObject>();
     private Coroutine _targetProcessCoroutine;
     private GameObject _currentTarget;

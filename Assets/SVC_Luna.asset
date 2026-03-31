@@ -551,7 +551,7 @@ MonoBehaviour:
     - DIRECTIONAL
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 552
+  version: 575
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0

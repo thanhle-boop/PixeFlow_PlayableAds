@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["BillboardUI#Start","BillboardUI#LateUpdate","Block#init","Conveyor#Start","Conveyor#Update","FlashObject#init","FlashObject#Awake","FlashObject#OnEnable","FlashObject#OnDisable","FlashObject#ResetFlash","FlashObject#StartFlashing","FlashObject#StopFlashing","FlashObject#FlashCoroutine","Singleton$1#Instance#get","Singleton$1#init","Singleton$1#Awake","GameUtility#GetColorByName","LevelDataSO#GetCell","PigComponent#init","PigComponent#OnDisable","PigComponent#GetQueueIndex","PigComponent#SetQueueIndex","PigComponent#ChangeState","PigComponent#Initialize","PigComponent#OnBulletChanged","PigComponent#DestroyAnimation","PigComponent#DestroyAnimationInternal","PigComponent#JumpTo","PigComponent#ConveyorJourney","PigComponent#JumpCoroutine","PigComponent#MoveTo","PigComponent#MoveCoroutine","PigComponent#ShootingRoutine","PigComponent#CheckAndAddTargetBlocks","PigComponent#SlideTo","PigComponent#MovePigThroughWaypoints","PigComponent#SlideOnCurve","PigComponent#JumpToQueue","PigComponent#JumpToQueueCoroutine","PigComponent#MoveInQueue","PigComponent#MoveInQueueCoroutine","PigComponent#OnTriggerEnter","PlayerInput#init","PlayerInput#Start","PlayerInput#Update","PlayerInput#HandleInput","SpawnerManager#init","SpawnerManager#OnEnable","SpawnerManager#OnDisable","SpawnerManager#RefundStraightSlot","SpawnerManager#ResetData","SpawnerManager#SelectPig","SpawnerManager#ResetClickFlag","SpawnerManager#RemovePigFromLane","SpawnerManager#SpawnMap","SpawnerManager#SpawnPigs","SpawnerManager#ApplyMaterial","SpawnerManager#HandlePigEnterQueue","SpawnerManager#FindNextAvailableQueueIndex","SpawnerManager#OnBlockDestroyed","SpawnerManager#HandlePigClickedFromQueue","SpawnerManager#RearrangeQueue","SpawnerManager#StopAllPigAnimations","WavyLineRenderer#init","WavyLineRenderer#Awake","WavyLineRenderer#OnDestroy","WavyLineRenderer#SetBulletChangedCallback","WavyLineRenderer#InitializeLineRenderer","WavyLineRenderer#SetColor","WavyLineRenderer#AddTarget","WavyLineRenderer#ProcessTargets","WavyLineRenderer#ClearAllTargets","WavyLineRenderer#UpdateStartPoint","WavyLineRenderer#HideLineImmediately","WavyLineRenderer#GetCurrentTargetPosition","GameManager#inherits","GameManager#Start","GameManager#StartGame","GameManager#WinStage","GameManager#GameOver","SoundManager#inherits","SoundManager#init","SoundManager#Start","SoundManager#PlaySound$1","SoundManager#PlaySound","SoundManager#PlaySoundWhenSourceAvailable","SoundManager#PlaySoundLoop","SoundManager#StopSound","SoundManager#PlayMusic$1","SoundManager#PlayMusic","SoundManager#SetMusicVolume","SoundManager#StopPlayMusic","SoundManager#PlayBackgroundMusic","UIManager#inherits","UIManager#OnEnable","UIManager#OnInvalidExecution","UIManager#StartGame","UIManager#OnDisable","UIManager#GameOver","UIManager#OnDownloadButtonClicked","UIManager#UpdateStraightSlot","UIManager#UpdateScore","UIManager#RestartGame"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["BillboardUI#Start","BillboardUI#LateUpdate","Block#init","Singleton$1#Instance#get","Singleton$1#init","Singleton$1#Awake","FlashObject#init","FlashObject#Awake","FlashObject#OnEnable","FlashObject#OnDisable","FlashObject#ResetFlash","FlashObject#StartFlashing","FlashObject#StopFlashing","FlashObject#FlashCoroutine","GameUtility#GetColorByName","LevelDataSO#GetCell","PigComponent#init","PigComponent#OnDisable","PigComponent#GetQueueIndex","PigComponent#SetQueueIndex","PigComponent#ChangeState","PigComponent#Initialize","PigComponent#OnBulletChanged","PigComponent#DestroyAnimation","PigComponent#DestroyAnimationInternal","PigComponent#JumpTo","PigComponent#ConveyorJourney","PigComponent#JumpCoroutine","PigComponent#MoveTo","PigComponent#MoveCoroutine","PigComponent#ShootingRoutine","PigComponent#CheckAndAddTargetBlocks","PigComponent#SlideTo","PigComponent#MovePigThroughWaypoints","PigComponent#SlideOnCurve","PigComponent#JumpToQueue","PigComponent#JumpToQueueCoroutine","PigComponent#MoveInQueue","PigComponent#MoveInQueueCoroutine","PigComponent#OnTriggerEnter","PlayerInput#init","PlayerInput#Start","PlayerInput#Update","PlayerInput#HandleInput","SpawnerManager#init","SpawnerManager#OnEnable","SpawnerManager#OnDisable","SpawnerManager#RefundStraightSlot","SpawnerManager#ResetData","SpawnerManager#SelectPig","SpawnerManager#ResetClickFlag","SpawnerManager#RemovePigFromLane","SpawnerManager#SpawnMap","SpawnerManager#SpawnPigs","SpawnerManager#ApplyMaterial","SpawnerManager#HandlePigEnterQueue","SpawnerManager#FindNextAvailableQueueIndex","SpawnerManager#OnBlockDestroyed","SpawnerManager#HandlePigClickedFromQueue","SpawnerManager#RearrangeQueue","SpawnerManager#StopAllPigAnimations","WavyLineRenderer#init","WavyLineRenderer#Awake","WavyLineRenderer#OnDestroy","WavyLineRenderer#SetBulletChangedCallback","WavyLineRenderer#InitializeLineRenderer","WavyLineRenderer#SetColor","WavyLineRenderer#AddTarget","WavyLineRenderer#ProcessTargets","WavyLineRenderer#ClearAllTargets","WavyLineRenderer#UpdateStartPoint","WavyLineRenderer#HideLineImmediately","WavyLineRenderer#GetCurrentTargetPosition","DataManager#inherits","GameManager#inherits","GameManager#Start","GameManager#StartGame","GameManager#WinStage","GameManager#GameOver","SoundManager#inherits","SoundManager#init","SoundManager#Start","SoundManager#PlaySound$1","SoundManager#PlaySound","SoundManager#PlaySoundWhenSourceAvailable","SoundManager#PlaySoundLoop","SoundManager#StopSound","SoundManager#PlayMusic$1","SoundManager#PlayMusic","SoundManager#SetMusicVolume","SoundManager#StopPlayMusic","SoundManager#PlayBackgroundMusic","UIManager#inherits","UIManager#OnEnable","UIManager#OnInvalidExecution","UIManager#StartGame","UIManager#OnDisable","UIManager#GameOver","UIManager#OnDownloadButtonClicked","UIManager#UpdateStraightSlot","UIManager#UpdateScore","UIManager#RestartGame"]' ) ); }
 /**
- * @version 1.0.9571.33110
+ * @version 1.0.9572.18428
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -58,30 +58,62 @@ if ( TRACE ) { TRACE( "Block#init", this ); }
     });
     /*Block end.*/
 
-    /*Conveyor start.*/
-    Bridge.define("Conveyor", {
+    /*Singleton$1 start.*/
+    Bridge.define("Singleton$1", function (T) { return {
         inherits: [UnityEngine.MonoBehaviour],
+        statics: {
+            fields: {
+                _instance: Bridge.getDefaultValue(T)
+            },
+            props: {
+                Instance: {
+                    get: function () {
+if ( TRACE ) { TRACE( "Singleton$1#Instance#get", this ); }
+
+                        if (Bridge.rValue(Singleton$1(T)._instance) == null) {
+                            Singleton$1(T)._instance = Bridge.rValue(UnityEngine.Object.FindObjectOfType(T));
+
+                            if (Bridge.rValue(Singleton$1(T)._instance) == null) {
+                                var singletonObject = new UnityEngine.GameObject.$ctor2(Bridge.Reflection.getTypeName(T));
+                                Singleton$1(T)._instance = Bridge.rValue(singletonObject.AddComponent(T));
+                            }
+                        }
+                        return Bridge.rValue(Singleton$1(T)._instance);
+                    }
+                }
+            },
+            ctors: {
+                init: function () {
+if ( TRACE ) { TRACE( "Singleton$1#init", this ); }
+
+                    this._instance = Bridge.getDefaultValue(T);
+                }
+            }
+        },
         methods: {
-            /*Conveyor.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "Conveyor#Start", this ); }
+            /*Singleton$1.Awake start.*/
+            Awake: function () {
+if ( TRACE ) { TRACE( "Singleton$1#Awake", this ); }
 
+                if (Bridge.rValue(Singleton$1(T)._instance) == null) {
+                    Singleton$1(T)._instance = Bridge.as(this, T);
 
+                    // Xử lý DontDestroyOnLoad cho object hoặc root của nó
+                    if (UnityEngine.Component.op_Inequality(this.transform.parent, null)) {
+                        UnityEngine.Object.DontDestroyOnLoad(this.transform.root.gameObject);
+                    } else {
+                        UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
+                    }
+                } else if (UnityEngine.MonoBehaviour.op_Inequality(Bridge.rValue(Singleton$1(T)._instance), this)) {
+                    UnityEngine.MonoBehaviour.Destroy(this.gameObject);
+                }
             },
-            /*Conveyor.Start end.*/
-
-            /*Conveyor.Update start.*/
-            Update: function () {
-if ( TRACE ) { TRACE( "Conveyor#Update", this ); }
-
-
-            },
-            /*Conveyor.Update end.*/
+            /*Singleton$1.Awake end.*/
 
 
         }
-    });
-    /*Conveyor end.*/
+    }; });
+    /*Singleton$1 end.*/
 
     /*EventManager start.*/
     Bridge.define("EventManager", {
@@ -297,63 +329,6 @@ if ( TRACE ) { TRACE( "FlashObject#FlashCoroutine", this ); }
         }
     });
     /*FlashObject end.*/
-
-    /*Singleton$1 start.*/
-    Bridge.define("Singleton$1", function (T) { return {
-        inherits: [UnityEngine.MonoBehaviour],
-        statics: {
-            fields: {
-                _instance: Bridge.getDefaultValue(T)
-            },
-            props: {
-                Instance: {
-                    get: function () {
-if ( TRACE ) { TRACE( "Singleton$1#Instance#get", this ); }
-
-                        if (Bridge.rValue(Singleton$1(T)._instance) == null) {
-                            Singleton$1(T)._instance = Bridge.rValue(UnityEngine.Object.FindObjectOfType(T));
-
-                            if (Bridge.rValue(Singleton$1(T)._instance) == null) {
-                                var singletonObject = new UnityEngine.GameObject.$ctor2(Bridge.Reflection.getTypeName(T));
-                                Singleton$1(T)._instance = Bridge.rValue(singletonObject.AddComponent(T));
-                            }
-                        }
-                        return Bridge.rValue(Singleton$1(T)._instance);
-                    }
-                }
-            },
-            ctors: {
-                init: function () {
-if ( TRACE ) { TRACE( "Singleton$1#init", this ); }
-
-                    this._instance = Bridge.getDefaultValue(T);
-                }
-            }
-        },
-        methods: {
-            /*Singleton$1.Awake start.*/
-            Awake: function () {
-if ( TRACE ) { TRACE( "Singleton$1#Awake", this ); }
-
-                if (Bridge.rValue(Singleton$1(T)._instance) == null) {
-                    Singleton$1(T)._instance = Bridge.as(this, T);
-
-                    // Xử lý DontDestroyOnLoad cho object hoặc root của nó
-                    if (UnityEngine.Component.op_Inequality(this.transform.parent, null)) {
-                        UnityEngine.Object.DontDestroyOnLoad(this.transform.root.gameObject);
-                    } else {
-                        UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
-                    }
-                } else if (UnityEngine.MonoBehaviour.op_Inequality(Bridge.rValue(Singleton$1(T)._instance), this)) {
-                    UnityEngine.MonoBehaviour.Destroy(this.gameObject);
-                }
-            },
-            /*Singleton$1.Awake end.*/
-
-
-        }
-    }; });
-    /*Singleton$1 end.*/
 
     /*GameState start.*/
     Bridge.define("GameState", {
@@ -2085,7 +2060,7 @@ if ( TRACE ) { TRACE( "WavyLineRenderer#init", this ); }
                 this.waveSpeed = 30.0;
                 this._currentAmplitude = 0.03;
                 this._baseColor = new pc.Color( 1, 1, 0, 1 );
-                this.targetDuration = 0.07;
+                this.targetDuration = 0.03;
                 this._targetBlocks = new (System.Collections.Generic.List$1(UnityEngine.GameObject)).ctor();
             }
         },
@@ -2393,6 +2368,14 @@ if ( TRACE ) { TRACE( "WavyLineRenderer#GetCurrentTargetPosition", this ); }
         }
     });
     /*WavyLineRenderer end.*/
+
+    /*DataManager start.*/
+    Bridge.define("DataManager", {
+        inherits: function () {
+if ( TRACE ) { TRACE( "DataManager#inherits", this ); }
+ return [Singleton$1(DataManager)]; }
+    });
+    /*DataManager end.*/
 
     /*GameManager start.*/
     Bridge.define("GameManager", {
@@ -2807,9 +2790,9 @@ if ( TRACE ) { TRACE( "UIManager#RestartGame", this ); }
     $m("Block", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"color","t":4,"rt":$n[0].String,"sn":"color"},{"a":2,"n":"isAlreadyDestroyed","t":4,"rt":$n[0].Boolean,"sn":"isAlreadyDestroyed","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
     /*Block end.*/
 
-    /*Conveyor start.*/
-    $m("Conveyor", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void}]}; }, $n);
-    /*Conveyor end.*/
+    /*DataManager start.*/
+    $m("DataManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"}]}; }, $n);
+    /*DataManager end.*/
 
     /*EventManager start.*/
     $m("EventManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"OnBlockDestroyed","is":true,"t":4,"rt":Function,"sn":"OnBlockDestroyed"},{"a":2,"n":"OnClickPig","is":true,"t":4,"rt":Function,"sn":"OnClickPig"},{"a":2,"n":"OnFullConveyorSlot","is":true,"t":4,"rt":Function,"sn":"OnFullConveyorSlot"},{"a":2,"n":"OnLoseGame","is":true,"t":4,"rt":Function,"sn":"OnLoseGame"},{"a":2,"n":"OnPigDestroyed","is":true,"t":4,"rt":Function,"sn":"OnPigDestroyed"},{"a":2,"n":"OnPigEnterQueue","is":true,"t":4,"rt":Function,"sn":"OnPigEnterQueue"},{"a":2,"n":"OnQueueFull","is":true,"t":4,"rt":Function,"sn":"OnQueueFull"},{"a":2,"n":"OnQueueNotFull","is":true,"t":4,"rt":Function,"sn":"OnQueueNotFull"},{"a":2,"n":"OnStartGame","is":true,"t":4,"rt":Function,"sn":"OnStartGame"},{"a":2,"n":"OnWinGame","is":true,"t":4,"rt":Function,"sn":"OnWinGame"}]}; }, $n);
